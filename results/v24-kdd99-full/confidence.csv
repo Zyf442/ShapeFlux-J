@@ -1,0 +1,21 @@
+group,metric,forks,mean,sample_sd,ci95_low,ci95_high,coefficient_of_variation,noise_flag
+" / INTERPRETED",engine_ms,1,3572.978262,,,,,单次，无法估计
+" / INTERPRETED",compute_ms,1,3358.175388,,,,,单次，无法估计
+" / INTERPRETED",elapsed_ms,1,29320.171675,,,,,单次，无法估计
+" / INTERPRETED",request_p95_us,1,5774.527,,,,,单次，无法估计
+" / GENERIC",engine_ms,1,2442.77403,,,,,单次，无法估计
+" / GENERIC",compute_ms,1,1838.168767,,,,,单次，无法估计
+" / GENERIC",elapsed_ms,1,27262.203188,,,,,单次，无法估计
+" / GENERIC",request_p95_us,1,3414.376,,,,,单次，无法估计
+" / EXACT",engine_ms,1,31083.638083,,,,,单次，无法估计
+" / EXACT",compute_ms,1,5439.654638,,,,,单次，无法估计
+" / EXACT",elapsed_ms,1,56571.543645,,,,,单次，无法估计
+" / EXACT",request_p95_us,1,44467.032,,,,,单次，无法估计
+" / BUCKET",engine_ms,1,2878.219395,,,,,单次，无法估计
+" / BUCKET",compute_ms,1,2148.187594,,,,,单次，无法估计
+" / BUCKET",elapsed_ms,1,27964.355857,,,,,单次，无法估计
+" / BUCKET",request_p95_us,1,3910.783,,,,,单次，无法估计
+" / ADAPTIVE",engine_ms,1,2537.535123,,,,,单次，无法估计
+" / ADAPTIVE",compute_ms,1,1871.829315,,,,,单次，无法估计
+" / ADAPTIVE",elapsed_ms,1,27574.340735,,,,,单次，无法估计
+" / ADAPTIVE",request_p95_us,1,3483.55,,,,,单次，无法估计

@@ -1,0 +1,6 @@
+# Deliberate duplicate expressions, foldable constants, and dead code
+let unused = exp(x);
+let factor = (1.0 + 2.0) / 4.0;
+let a = relu(x + bias);
+let b = relu(x + bias);
+out = (a + b) * factor;

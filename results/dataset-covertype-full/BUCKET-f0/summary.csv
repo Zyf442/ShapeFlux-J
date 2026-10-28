@@ -1,0 +1,2 @@
+strategy,fork,rows,features,batches,engine_ms,compute_ms,read_ms,reference_ms,elapsed_ms,request_p50_us,request_p95_us,compilations,hits,misses,compile_failures,runtime_failures,fallbacks,compile_ms,correct,max_abs_error,input_values_sha256
+BUCKET,0,581012,54,105,1298.588576,222.631607,2191.552852,655.834293,4604.355587,2168.586,4870.742,3,103,2,0,0,0,913.69932,true,0.0,b2d53ef7a80609b0515f3b6976e0a0404bb8732856f97d9ab728e05e45ecd551

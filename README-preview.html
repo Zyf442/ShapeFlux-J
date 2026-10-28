@@ -1,0 +1,217 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ShapeFlux-J 2.4 中文项目文档</title><style>@font-face{font-family:Noto;src:url(assets/fonts/NotoSansCJKsc-Regular.otf)}*{box-sizing:border-box}body{font:16px/1.85 Noto,'Microsoft YaHei',sans-serif;background:#0b1120;color:#eaf1ff;margin:0}main{max-width:1220px;margin:auto;padding:36px 32px 70px}h1,h2,h3{line-height:1.5;color:#eaf1ff;margin-top:1.8em}h1{font-size:34px}h2{font-size:25px;border-bottom:1px solid #263750;padding-bottom:10px}h3{font-size:20px}a{color:#42dfc0;text-decoration:none}a:hover{text-decoration:underline}img{max-width:100%;height:auto;border-radius:8px;margin:16px 0}table{display:block;border-collapse:collapse;width:100%;overflow:auto;font-size:14px}th,td{padding:11px 14px;border:1px solid #2c3d57;text-align:left}th{background:#14223a;color:#42dfc0}pre{background:#14223a;padding:22px;overflow:auto;border:1px solid #2c3d57;border-radius:8px;line-height:1.65}code{font-family:Consolas,'DejaVu Sans Mono',monospace;font-size:.92em;color:#d6e5fb}blockquote{border-left:4px solid #42dfc0;margin-left:0;padding:4px 20px;background:#14223a}.notice{padding:14px 20px;color:#9aafcb;border:1px solid #263750;border-radius:8px}</style><main><p class="notice">本页为当前README的离线阅读版。双击Chinese.bat启动Java工作台。</p><div align="center">
+
+<p><img src="docs/images/hero.png" alt="ShapeFlux-J：动态形状算子编译与自适应优化"></p>
+<h1>ShapeFlux-J 2.4</h1>
+<p><strong>从算子公式到可验证的Java内核，让编译、缓存与执行成本看得见。</strong></p>
+<p>中文工作台 · 可组合归约 · 二维形状守卫 · CPU矩阵乘法 · 真实数据 · 独立重复实验</p>
+<p><a href="README-preview.html">离线阅读</a> · <a href="#quick-start">快速开始</a> · <a href="FEATURES.md">功能与验证</a> · <a href="#datasets">数据集</a> · <a href="results/index.html">实测报告</a> · <a href="docs/README.md">文档地图</a></p>
+</div>
+
+<p>ShapeFlux-J使用Java标准库实现动态形状算子编译实验平台。输入公式后，可以观察解析后的计算图、优化结果、融合Java代码、字节码编译、形状派发、缓存复用和参考校验。矩阵乘法通过独立CPU编译入口提供。</p>
+<p><strong>完整发行包包含三套共6,504,453条真实记录。</strong> 运行不需要Python、数据库、前端服务或GPU。最低要求完整JDK17；你的JDK23.0.2可用于运行与构建。随包实测环境单独记录为Linux/OpenJDK17.0.20，远端CI状态以真实运行结果为准。</p>
+<p><img src="docs/images/workbench-v24.png" alt="中文工作台与实验浏览"></p>
+<h2>已实现的六项能力</h2>
+<table>
+<thead>
+<tr>
+<th>从哪里开始</th>
+<th>能做什么</th>
+<th>会得到什么</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>轨迹分析</td>
+<td>导入形状CSV、requests.csv或batches.csv</td>
+<td>频次、再次到达间隔、窗口复用估计</td>
+</tr>
+<tr>
+<td>参数设置</td>
+<td>设置N和D的区间跨度</td>
+<td>守卫范围、编译次数与缓存记录</td>
+</tr>
+<tr>
+<td>对比执行策略</td>
+<td>指定独立进程重复数、预热与测量次数</td>
+<td>95%置信区间、CV与系统噪声记录</td>
+</tr>
+<tr>
+<td>可组合归约模板</td>
+<td>求均值、中心化、方差或组合Softmax</td>
+<td>阶段化融合代码与数值核验</td>
+</tr>
+<tr>
+<td>实验浏览</td>
+<td>按目录、类型、状态和JDK筛选</td>
+<td>原始数据目录与可打开的HTML报告</td>
+</tr>
+<tr>
+<td>矩阵乘法</td>
+<td>生成固定种子矩阵或导入A/B两个CSV</td>
+<td>参考、通用和分块CPU编译对照</td>
+</tr>
+</tbody></table>
+<p><a href="FEATURES.md">实现与验证入口</a> · <a href="docs/completed-features.md">详细功能说明</a></p>
+<p><a id="quick-start"></a></p>
+<h2>快速开始</h2>
+<p>完整解压后，先在项目目录执行：</p>
+<pre><code class="language-bash">java -version
+java -jar dist/shapeflux-j.jar doctor
+java -jar dist/shapeflux-j.jar gui
+</code></pre>
+<p>Windows可以直接双击 <strong>Chinese.bat</strong>。Linux/macOS使用 <code>sh Chinese.sh</code>。<code>doctor</code>中的 <code>system_compiler</code> 应为true。</p>
+<table>
+<thead>
+<tr>
+<th>入口</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Chinese.bat</code></td>
+<td>打开中文工作台</td>
+</tr>
+<tr>
+<td><code>快速测试数据.bat</code></td>
+<td>完整发行包中测试KDD99前65,536行、五种策略</td>
+</tr>
+<tr>
+<td><code>完整测试数据.bat</code></td>
+<td>测试KDD99全部4,898,431行</td>
+</tr>
+<tr>
+<td><code>验证新版功能.bat</code></td>
+<td>构建、运行本地检查和新增功能的命令行集成检查</td>
+</tr>
+<tr>
+<td><code>开始使用.txt</code></td>
+<td>简短中文说明</td>
+</tr>
+</tbody></table>
+<p>从Git仓库克隆时，大数据不会进入普通Git提交。仓库保留quick CSV；完整原始/处理数据使用发行附件。仅测试源码样本可以运行：</p>
+<pre><code class="language-bash">java -jar dist/shapeflux-j.jar dataset --input datasets/kdd99/prepared/quick-8192x122.csv --label none --output results/my-sample
+</code></pre>
+<h2>一段公式，组合多个计算阶段</h2>
+<pre><code class="language-text">let centered = x - rowmean(x);
+out = rowmean(square(centered));
+</code></pre>
+<p>这里先求行均值，再广播回每行，最后计算总体方差。中间行归约与普通函数可以出现在let或更大的表达式中；归约根作为最终输出时使用N×1布局。</p>
+<pre><code class="language-text">let centered = x - rowmax(x);
+let e = exp(centered);
+out = e / rowsum(e);
+</code></pre>
+<p>这段代码组合了稳定Softmax：先减行最大值，再用行和归一化。生成器在行阶段之间融合逐元素子图，行内临时数组跨行复用。</p>
+<p><img src="docs/images/composable-reduction.png" alt="可组合归约"></p>
+<h2>在N和D变化时复用内核</h2>
+<p>默认按N的二次幂区间分桶并固定D。指定跨度后，可在两个轴上共享，例如 <code>33≤N≤64，65≤D≤96</code>。内核始终使用实际N和D，不补零。</p>
+<pre><code class="language-bash">java -jar dist/shapeflux-j.jar run --file examples/composable-softmax.sfx --trace examples/traces/multiaxis.csv --mode BUCKET --row-bucket 32 --col-bucket 32 --output results/my-2d
+</code></pre>
+<p><img src="docs/images/shape-guard-2d.png" alt="二维区间守卫"></p>
+<p>五种策略保留：<code>INTERPRETED</code>、<code>GENERIC</code>、<code>EXACT</code>、<code>BUCKET</code>、<code>ADAPTIVE</code>。自适应策略利用最近请求窗口中的形状族频率估计复用次数，再结合软预算、编译成本、A/B探测和周期复核作决定。候选被拒绝也是有效结果。</p>
+<h2>实测轨迹有出处</h2>
+<p><code>examples/traces</code>包含从完整数据实验逐批日志提取的1163条形状记录，覆盖39种精确形状；各原始日志与轨迹都有SHA-256。它们是实际文件读取批次，不能解释成线上服务到达记录。三套运行的拼接顺序也在来源文件中明示。</p>
+<pre><code class="language-bash">java -jar dist/shapeflux-j.jar trace --input examples/traces/recorded-combined.csv --reuse-window 128 --horizon 256 --row-bucket 1024 --col-bucket 32 --output results/my-trace
+</code></pre>
+<p><code>reuse.csv</code>保存逐请求窗口频次与预测，<code>source-trace.csv</code>保留原始输入，<code>report.html</code>展示形状族分布。较长轨迹可以逐批重放，输入数值用固定种子重建；这与读取真实特征值的dataset实验分开解释。</p>
+<h2>CPU矩阵乘法，语义与代码都能检查</h2>
+<p><img src="docs/images/matrix-multiply.png" alt="矩阵乘法与三轴守卫"></p>
+<p>独立入口计算行优先 <code>A[N,K] × B[K,M] → C[N,M]</code>，提供参考三重循环、通用Java编译和16×32×32分块编译。每个输出按K递增累加，使用有限内核缓存，并验证N/K/M三轴守卫。</p>
+<pre><code class="language-bash">java -jar dist/shapeflux-j.jar matmul --rows 96 --inner 128 --cols 80 --forks 5 --warmup 4 --measure 9 --output results/my-matmul
+java -jar dist/shapeflux-j.jar matmul --input-a examples/matmul-a.csv --input-b examples/matmul-b.csv --forks 2 --output results/my-matmul-csv
+</code></pre>
+<p>手算示例输出为 <code>[[58,64],[139,154]]</code>。矩阵乘法的源码、输出CSV、逐轮记录、计时和置信区间都保存在结果目录中。</p>
+<p><a id="datasets"></a></p>
+<h2>三套完整真实数据</h2>
+<p><img src="docs/images/dataset-scale.png" alt="三套数据的实际规模"></p>
+<table>
+<thead>
+<tr>
+<th>数据集</th>
+<th align="right">完整记录数</th>
+<th align="right">算子输入列数</th>
+<th>随包内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="datasets/covertype/README.md">Covertype</a></td>
+<td align="right">581,012</td>
+<td align="right">54</td>
+<td>原始gzip、完整CSV批次和快速样本</td>
+</tr>
+<tr>
+<td><a href="datasets/poker/README.md">Poker Hand</a></td>
+<td align="right">1,025,010</td>
+<td align="right">10</td>
+<td>原始训练/测试文件、完整特征gzip和快速样本</td>
+</tr>
+<tr>
+<td><a href="datasets/kdd99/README.md">KDD99</a></td>
+<td align="right">4,898,431</td>
+<td align="right">122</td>
+<td>原始完整训练文件、独热编码特征、字段映射</td>
+</tr>
+<tr>
+<td>合计</td>
+<td align="right"><strong>6,504,453</strong></td>
+<td align="right">按数据集固定</td>
+<td>来源、许可、转换记录与摘要</td>
+</tr>
+</tbody></table>
+<p>KDD99原始41个特征中，38个数值列保留原值，3个类别字段独热编码后得到122列。项目用这些数据研究算子与编译成本，不训练分类模型。</p>
+<pre><code class="language-bash">java -jar dist/shapeflux-j.jar dataset --dataset kdd99 --max-rows 65536 --forks 5 --output results/my-kdd-repeat
+java -jar dist/shapeflux-j.jar dataset --dataset kdd99 --output results/my-kdd-full
+</code></pre>
+<p><img src="docs/images/streaming.png" alt="流式读取与校验"></p>
+<p>每种策略每次重复使用独立JVM，从文件开头读取同一特征流；每批与参考实现核验，运行前后检查源文件摘要。<code>-Xmx768m</code>是配置值；8192×122×8约7.63MiB只是最大输入数组，均不表示实际进程RSS。</p>
+<h2>如何判断一次实验可信</h2>
+<p>先看行数、特征数、数值校验及失败/回退计数，再看完整请求成本与计算成本。每个fork的统计量单独保留；跨fork报告Student-t 95%均值区间、样本标准差和CV。只有一个fork时不估计区间。</p>
+<p>GC、JIT和CPU诊断覆盖工作进程执行范围，包含预热与外部参考校验；它们帮助观察波动，不证明某个事件造成了延迟变化。样本较少或分布偏斜时，区间可能很宽。</p>
+<p><img src="docs/images/confidence-interval.png" alt="五次独立进程的实测区间"></p>
+<p><a href="results/index.html">全部实测报告</a> · <a href="docs/benchmark-methodology.md">计时与统计方法</a> · <a href="docs/validation-report.md">验证记录</a></p>
+<h2>构建与验证</h2>
+<pre><code class="language-bash">java tools/Build.java test
+java -jar dist/shapeflux-j.jar verify --output results/my-verify
+java -cp dist/shapeflux-j.jar tools/ValidateCompletionRelease.java results/my-feature-checks
+</code></pre>
+<p>完整版本使用Java17目标字节码；CI配置包含JDK17/21/23与Linux/Windows。本地验证与性能记录的JDK、系统和应用SHA均以实际文件为准。</p>
+<h2>源码与文档</h2>
+<table>
+<thead>
+<tr>
+<th>路径</th>
+<th>职责</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ir</code></td>
+<td>语法、合法算子、数值语义与图优化</td>
+</tr>
+<tr>
+<td><code>compiler</code></td>
+<td>融合/行阶段代码、内存编译、二维与三轴守卫</td>
+</tr>
+<tr>
+<td><code>runtime</code></td>
+<td>派发、窗口热度、有限缓存、探测复核与矩阵执行</td>
+</tr>
+<tr>
+<td><code>experiment</code></td>
+<td>轨迹、独立进程、统计、噪声、实时进度与报告</td>
+</tr>
+<tr>
+<td><code>io</code></td>
+<td>工程、CSV、真实数据流与预处理</td>
+</tr>
+<tr>
+<td><code>ui</code> / <code>i18n</code></td>
+<td>中文工作台、进度与可筛选实验浏览</td>
+</tr>
+<tr>
+<td><code>tools</code></td>
+<td>构建、数据准备、集成检查与打包</td>
+</tr>
+</tbody></table>
+<p><a href="docs/README.md">完整文档导航</a> · <a href="docs/dsl-reference.md">DSL语法</a> · <a href="FEATURES.md">功能与验证</a> · <a href="CHANGELOG.md">更新记录</a></p>
+<h2>许可与范围</h2>
+<p>代码使用<a href="LICENSE">MIT</a>，中文后备字体使用SIL OFL1.1，三套公开数据分别保留CC BY4.0许可、引用及处理声明，详见<a href="THIRD-PARTY-NOTICES.md">第三方说明</a>。</p>
+<p>当前计算使用CPU和double；不包含GPU、自动微分、模型训练、卷积或任意秩张量。数值正确不等于分类准确率，减少编译次数也不保证所有设备、输入和冷请求下都更快。</p>
+</main></html>

@@ -1,0 +1,2 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"shift / ADAPTIVE",1,563.0410260000001,,174.554,311.851,1.0,true

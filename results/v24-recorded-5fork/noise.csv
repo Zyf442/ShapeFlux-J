@@ -1,0 +1,16 @@
+worker,gc_count,gc_ms,jit_ms,process_cpu_ms,scope_ms,heap_used_at_end_bytes
+"custom-ADAPTIVE-f0",18.0,34.0,825.0,unsupported,1357.917563,72452392
+"custom-ADAPTIVE-f1",18.0,36.0,810.0,unsupported,1342.382724,72957840
+"custom-ADAPTIVE-f2",18.0,34.0,817.0,unsupported,1431.407897,72006960
+"custom-ADAPTIVE-f3",18.0,30.0,786.0,unsupported,1346.557501,89820560
+"custom-ADAPTIVE-f4",18.0,36.0,770.0,unsupported,1369.049646,150213920
+"custom-BUCKET-f0",18.0,42.0,1403.0,unsupported,1498.196212,78284064
+"custom-BUCKET-f1",19.0,40.0,1240.0,unsupported,1528.161185,123405480
+"custom-BUCKET-f2",19.0,36.0,1315.0,unsupported,1562.486435,50797496
+"custom-BUCKET-f3",21.0,34.0,1227.0,unsupported,1489.405623,85832464
+"custom-BUCKET-f4",19.0,35.0,1295.0,unsupported,1529.65309,77422112
+"custom-GENERIC-f0",19.0,39.0,893.0,unsupported,1427.579545,110778976
+"custom-GENERIC-f1",18.0,38.0,800.0,unsupported,1376.364039,53807552
+"custom-GENERIC-f2",18.0,28.0,790.0,unsupported,1363.111387,85200784
+"custom-GENERIC-f3",18.0,35.0,864.0,unsupported,1396.750063,69344912
+"custom-GENERIC-f4",18.0,32.0,738.0,unsupported,1344.981489,70255120

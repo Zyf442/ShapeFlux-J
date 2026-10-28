@@ -1,0 +1,2 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+longtail,EXACT,20261027,0,48,1247.8024420000002,21.418345000000006,1361.0634480000006,188.305,659.186,248.315,24353.204,4592.04648,339.39884,0.0,171,502,170,162,0,0,0,0,true,0.0,8281,0,0,0

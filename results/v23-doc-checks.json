@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "local_markdown_links_checked": 134,
+  "broken_links": [],
+  "svg_files_valid": 14,
+  "legacy_launchers_absent": true,
+  "application_sha256": "a357d95e920e360c6334de2894bb6afc0bb5de1a4170fef6f0eb7680b5932120",
+  "full_dataset_checks": [
+    {
+      "dataset": "covertype",
+      "rows_per_strategy": 581012,
+      "strategies": 5,
+      "passed": true
+    },
+    {
+      "dataset": "poker",
+      "rows_per_strategy": 1025010,
+      "strategies": 5,
+      "passed": true
+    },
+    {
+      "dataset": "kdd99",
+      "rows_per_strategy": 4898431,
+      "strategies": 5,
+      "passed": true
+    }
+  ]
+}

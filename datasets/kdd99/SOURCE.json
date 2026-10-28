@@ -1,0 +1,35 @@
+{
+  "source_page": "https://archive.ics.uci.edu/dataset/130/kdd+cup+1999+data",
+  "download_note": "Original legacy download returned 403/404. Full original gzip retrieved from the mirror and verified against the exact SHA-256 published by scikit-learn.",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "Stolfo, S., Fan, W., Lee, W., Prodromidis, A., & Chan, P. (1999). KDD Cup 1999 Data [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C51C7N.",
+  "files": {
+    "kddcup.data.gz": {
+      "url": "https://ndownloader.figshare.com/files/5976045",
+      "bytes": 18115902,
+      "sha256": "3b6c942aa0356c0ca35b7b595a26c89d343652c9db428893e7494f837b274292",
+      "checksum_authority": "https://github.com/scikit-learn/scikit-learn/blob/main/sklearn/datasets/_kddcup99.py"
+    },
+    "kddcup.names": {
+      "url": "https://archive.ics.uci.edu/static/public/130/kdd+cup+1999+data.zip",
+      "bytes": 1307,
+      "sha256": "4b903fb4d68c17d02b5c776998c21fa9d9d8b018348849bed7aadeda21893386"
+    },
+    "task.html": {
+      "url": "https://archive.ics.uci.edu/static/public/130/kdd+cup+1999+data.zip",
+      "bytes": 10277,
+      "sha256": "5f6ce7015f9d41d37b7955ecd92ec0a0362deaa36ef6b4978627555c5ae916ef"
+    },
+    "kddcup99.html": {
+      "url": "https://archive.ics.uci.edu/static/public/130/kdd+cup+1999+data.zip",
+      "bytes": 2452,
+      "sha256": "278043b99c1a9fffee4a2b66be48d6a392f3e6b3c31986584dfab8a9e17e6b7c"
+    },
+    "typo-correction.txt": {
+      "url": "https://archive.ics.uci.edu/static/public/130/kdd+cup+1999+data.zip",
+      "bytes": 825,
+      "sha256": "169d29008e9641527ebf0e64291b47e3500adc1d8843ab94d59c2749404a18b7"
+    }
+  }
+}

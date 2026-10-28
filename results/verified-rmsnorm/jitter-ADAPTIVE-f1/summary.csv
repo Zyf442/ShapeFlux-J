@@ -1,0 +1,2 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+jitter,ADAPTIVE,20262027,1,18,530.69865,3.871428,2.4350740000000006,24.167,123.977,51.207,160.643,506.399286,6.844431,0.0,1,0,90,0,0,0,0,0,true,0.0,908,0,0,0

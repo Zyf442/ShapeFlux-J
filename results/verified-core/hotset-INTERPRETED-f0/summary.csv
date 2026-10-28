@@ -1,0 +1,2 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+hotset,INTERPRETED,20261027,0,48,47.498291999999985,46.73803100000001,107.63343199999998,327.435,1070.948,329.738,1073.782,0.0,0.0,0.0,0,0,672,0,0,0,0,0,true,0.0,0,0,0,0

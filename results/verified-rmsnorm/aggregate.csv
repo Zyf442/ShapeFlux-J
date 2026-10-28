@@ -1,0 +1,4 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"jitter / GENERIC",2,483.38657700000005,2.386082335639294,56.2445,85.72999999999999,1.0,true
+"jitter / BUCKET",2,580.5006334999999,5.320931152274534,111.328,256.923,2.0,true
+"jitter / ADAPTIVE",2,525.8066895,6.918276885693523,61.613,167.894,1.0,true

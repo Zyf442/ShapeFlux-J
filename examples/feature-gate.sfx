@@ -1,0 +1,4 @@
+# Lightweight per-feature gated residual block, no model training
+let gate = sigmoid(x * 0.3 + bias);
+let value = gelu(x + bias);
+out = value * gate + x * 0.1;

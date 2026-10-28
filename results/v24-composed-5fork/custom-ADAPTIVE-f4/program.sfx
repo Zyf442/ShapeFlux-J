@@ -1,0 +1,3 @@
+let centered = x - rowmax(x);
+let e = exp(centered);
+out = e / rowsum(e);

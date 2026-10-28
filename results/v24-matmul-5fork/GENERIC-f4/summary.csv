@@ -1,0 +1,2 @@
+mode,fork,rows,inner,cols,compile_ms,cold_request_ms,median_compute_us,p95_compute_us,correct,max_abs_error,compilations
+GENERIC,4,96,128,80,335.630163,362.180655,779.803,1021.537,true,0.0,1

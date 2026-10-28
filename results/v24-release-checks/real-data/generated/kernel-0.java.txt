@@ -1,0 +1,27 @@
+package io.shapeflux.generated;
+
+// Guard: generic; unroll=1
+public final class K_1 implements io.shapeflux.compiler.Kernel {
+  public void run(double[] x, double[] bias, int rows, int cols, double[] out) {
+    if (!(rows >= 1 && rows <= 2147483647 && cols >= 1 && cols <= 2147483647) || rows < 1 || cols < 1 || (long) rows * cols > 8000000L || x.length != (long) rows * cols || bias.length != cols || out.length != (long) rows * cols) throw new IllegalArgumentException("Kernel shape guard failed");
+    final int width = cols;
+    final int height = rows;
+    for (int r = 0; r < height; r++) {
+      int offset = r * width;
+      int c = 0;
+      for (; c < width; c++) {
+        out[offset + c] = eval(x, bias, offset + c, c);
+      }
+    }
+  }
+
+  private static double eval(double[] x, double[] bias, int i, int c) {
+    double v0 = x[i];
+    double v1 = bias[c];
+    double v2 = v0 + v1;
+    double v3 = Math.max(0.0, v2);
+    double v4 = 2.0;
+    double v5 = v3 * v4;
+    return v5;
+  }
+}

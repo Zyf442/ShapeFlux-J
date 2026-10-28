@@ -1,0 +1,18 @@
+{
+  "source_page": "https://archive.ics.uci.edu/dataset/31/covertype",
+  "download_url": "https://archive.ics.uci.edu/static/public/31/covertype.zip",
+  "download_archive_sha256": "89a975c2457cd48e824238ae43c5a3cb762e42c4b4078d9b44a4514055105f6d",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "Blackard, J. (1998). Covertype [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C50K5N.",
+  "files": {
+    "covtype.data.gz": {
+      "bytes": 11240707,
+      "sha256": "614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771"
+    },
+    "covtype.info": {
+      "bytes": 14610,
+      "sha256": "15f192a8cbebbf26af940301727d1795b8ca92a80dc1cc6b3bdad2af9546bc35"
+    }
+  }
+}

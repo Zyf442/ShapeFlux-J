@@ -1,0 +1,40 @@
+package io.shapeflux.generated;
+
+// Guard: 33..64x128; unroll=4
+public final class K_13 implements io.shapeflux.compiler.Kernel {
+  public void run(double[] x, double[] bias, int rows, int cols, double[] out) {
+    if (!(rows >= 33 && rows <= 64 && cols == 128) || rows < 1 || cols < 1 || (long) rows * cols > 8000000L || x.length != (long) rows * cols || bias.length != cols || out.length != (long) rows * cols) throw new IllegalArgumentException("Kernel shape guard failed");
+    final int width = 128;
+    final int height = rows;
+    for (int r = 0; r < height; r++) {
+      int offset = r * width;
+      int c = 0;
+      for (; c + 3 < width; c += 4) {
+        out[offset + c + 0] = eval(x, bias, offset + c + 0, c + 0);
+        out[offset + c + 1] = eval(x, bias, offset + c + 1, c + 1);
+        out[offset + c + 2] = eval(x, bias, offset + c + 2, c + 2);
+        out[offset + c + 3] = eval(x, bias, offset + c + 3, c + 3);
+      }
+      for (; c < width; c++) {
+        out[offset + c] = eval(x, bias, offset + c, c);
+      }
+    }
+  }
+
+  private static double eval(double[] x, double[] bias, int i, int c) {
+    double v0 = x[i];
+    double v1 = 1.25;
+    double v2 = v0 * v1;
+    double v3 = bias[c];
+    double v4 = v2 + v3;
+    double v5 = Math.max(0.0, v4);
+    double v6 = 0.5;
+    double v7 = v5 * v6;
+    double v8 = Math.tanh(v7);
+    double v9 = 0.1;
+    double v10 = v5 * v9;
+    double v11 = v8 + v10;
+    double v12 = io.shapeflux.ir.Ops.sigmoid(v11);
+    return v12;
+  }
+}

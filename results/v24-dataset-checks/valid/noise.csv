@@ -1,0 +1,3 @@
+worker,gc_count,gc_ms,jit_ms,process_cpu_ms,scope_ms,heap_used_at_end_bytes
+"BUCKET-f0",1.0,6.0,881.0,unsupported,538.714741,42042880
+"GENERIC-f0",1.0,9.0,623.0,unsupported,449.907396,17887744

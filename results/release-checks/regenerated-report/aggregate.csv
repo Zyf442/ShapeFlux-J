@@ -1,0 +1,3 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"hotset / GENERIC",2,489.4444024999999,14.493962966671404,200.838,422.563,1.0,true
+"hotset / BUCKET",2,878.2081860000001,9.098706406413099,644.158,50630.345499999996,13.0,true

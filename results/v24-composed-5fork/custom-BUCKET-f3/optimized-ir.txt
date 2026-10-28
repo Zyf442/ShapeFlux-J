@@ -1,0 +1,11 @@
+x : Tensor<double>[N,D]
+bias : Tensor<double>[D] (row broadcast)
+
+v0 = X
+v1 = ROWMAX[v0]
+v2 = SUB[v0, v1]
+v3 = EXP[v2]
+v4 = ROWSUM[v3]
+v5 = DIV[v3, v4]
+
+out = MAP(v5) : [N,D]

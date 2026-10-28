@@ -1,0 +1,8 @@
+x : Tensor<double>[N,D]
+bias : Tensor<double>[D] (row broadcast)
+
+v0 = X
+v1 = BIAS
+v2 = ADD[v0, v1]
+
+out = RMS_NORM(v2) : [N,D]

@@ -1,0 +1,3 @@
+# Feature-width preserving, stable row softmax
+let scores = gelu(x + bias) * 0.75;
+out = softmax(scores);

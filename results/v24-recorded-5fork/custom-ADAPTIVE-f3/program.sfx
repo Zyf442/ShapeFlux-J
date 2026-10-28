@@ -1,0 +1,2 @@
+# RMS normalization with scaled sum of squares
+out = rmsnorm(x + bias);

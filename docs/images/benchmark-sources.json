@@ -1,0 +1,30 @@
+{
+  "datasets": [
+    "covertype",
+    "poker",
+    "kdd99"
+  ],
+  "strategies": [
+    "INTERPRETED",
+    "GENERIC",
+    "EXACT",
+    "BUCKET",
+    "ADAPTIVE"
+  ],
+  "source_csv": [
+    "results/v23-covertype-full/summary.csv",
+    "results/v23-poker-full/summary.csv",
+    "results/v23-kdd99-full/summary.csv"
+  ],
+  "source_csv_sha256": {
+    "covertype": "cf33d0816e1be69cf37f0e453575ac586bc3db82b9f7d20378cf13fa45c10704",
+    "poker": "c79e60e9cac42ecdff14f2c104533a4d099432b1f172d0aaa0838b039e47f497",
+    "kdd99": "649569186ebcd22e397e09a1ddcc0a7e2653fc33b6d5057b0077373ba32e5af2"
+  },
+  "fields": [
+    "engine_ms",
+    "compilations"
+  ],
+  "independent_workers_per_strategy_per_dataset": 1,
+  "warmup_passes": 0
+}

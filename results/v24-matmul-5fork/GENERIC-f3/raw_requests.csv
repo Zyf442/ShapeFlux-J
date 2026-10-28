@@ -1,0 +1,15 @@
+phase,iteration,compute_us,total_us,correct,max_abs_error
+cold,0,1081.007,368658.469,true,0.0
+warmup,1,773.744,4018.856,true,0.0
+warmup,2,784.49,827.485,true,0.0
+warmup,3,781.595,813.464,true,0.0
+warmup,4,799.001,829.278,true,0.0
+measure,5,779.383,809.468,true,0.0
+measure,6,765.892,794.996,true,0.0
+measure,7,798.572,828.467,true,0.0
+measure,8,768.556,798.531,true,0.0
+measure,9,765.742,810.499,true,0.0
+measure,10,783.528,816.088,true,0.0
+measure,11,783.418,844.25,true,0.0
+measure,12,780.364,817.169,true,0.0
+measure,13,781.295,827.024,true,0.0

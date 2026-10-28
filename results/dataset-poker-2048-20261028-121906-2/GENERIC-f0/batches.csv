@@ -1,0 +1,2 @@
+batch,start_row,end_row,rows,cols,selected,cache_hit,compute_us,total_us,correct,max_abs_error
+1,1,2048,2048,10,generic,false,3225.404000,1103337.024000,true,0.00000000000

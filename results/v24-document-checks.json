@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "markdown_relative_links": 124,
+  "html_local_links": 72,
+  "broken_links": [],
+  "roadmap_file_removed": true,
+  "future_work_sections_and_unchecked_tasks_removed": true,
+  "original_numeric_data_files_unchanged": 84,
+  "git_large_data_rules_verified": true,
+  "current_application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+  "unit_checks": 679,
+  "all_95_measured_workers_validated": true
+}

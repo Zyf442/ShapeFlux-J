@@ -1,0 +1,2 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"shift / INTERPRETED",1,30.584685,,285.161,591.363,0.0,true

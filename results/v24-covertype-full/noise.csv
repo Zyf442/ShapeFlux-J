@@ -1,0 +1,6 @@
+worker,gc_count,gc_ms,jit_ms,process_cpu_ms,scope_ms,heap_used_at_end_bytes
+"ADAPTIVE-f0",31.0,51.0,1096.0,unsupported,2322.143503,68899368
+"BUCKET-f0",29.0,49.0,1307.0,unsupported,2453.256332,227274848
+"EXACT-f0",47.0,112.0,8446.0,unsupported,5517.513569,73665560
+"GENERIC-f0",30.0,52.0,1096.0,unsupported,2295.602189,126369920
+"INTERPRETED-f0",35.0,46.0,473.0,unsupported,2074.058894,105623584

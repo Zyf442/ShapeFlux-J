@@ -1,0 +1,9 @@
+group,metric,forks,mean,sample_sd,ci95_low,ci95_high,coefficient_of_variation,noise_flag
+" / GENERIC",engine_ms,1,363.938895,,,,,单次，无法估计
+" / GENERIC",compute_ms,1,2.081761,,,,,单次，无法估计
+" / GENERIC",elapsed_ms,1,383.799974,,,,,单次，无法估计
+" / GENERIC",request_p95_us,1,361995.031,,,,,单次，无法估计
+" / BUCKET",engine_ms,1,460.963086,,,,,单次，无法估计
+" / BUCKET",compute_ms,1,1.578825,,,,,单次，无法估计
+" / BUCKET",elapsed_ms,1,479.164289,,,,,单次，无法估计
+" / BUCKET",request_p95_us,1,409518.094,,,,,单次，无法估计

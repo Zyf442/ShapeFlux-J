@@ -1,0 +1,22 @@
+{
+  "source_page": "https://archive.ics.uci.edu/dataset/158/poker+hand",
+  "download_url": "https://archive.ics.uci.edu/static/public/158/poker+hand.zip",
+  "download_sha256": "c18333f541b344effb8f446c30f398634d1d045e7b991f3c3399e69af940c4c9",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "citation": "Cattral, R. & Oppacher, F. (2002). Poker Hand [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5KW38.",
+  "files": {
+    "poker-hand-training-true.data": {
+      "bytes": 613694,
+      "sha256": "37becdf87d5f8cbf2b91d6471e965a25b86cb4a6d878c0f94a4025969fca464f"
+    },
+    "poker-hand-testing.data": {
+      "bytes": 24538333,
+      "sha256": "3cd75958e19dd321ed5ca3f7f154c0f6aad544aab9f37731ac545b5f66b232c7"
+    },
+    "poker-hand.names": {
+      "bytes": 5946,
+      "sha256": "7a273f795d98e84994390576b604b6fc373552e3f42641a038ec0d51c9bb05f7"
+    }
+  }
+}

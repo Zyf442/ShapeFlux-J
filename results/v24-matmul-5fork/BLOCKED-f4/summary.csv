@@ -1,0 +1,2 @@
+mode,fork,rows,inner,cols,compile_ms,cold_request_ms,median_compute_us,p95_compute_us,correct,max_abs_error,compilations
+BLOCKED,4,96,128,80,406.590415,440.229771,613.022,705.832,true,0.0,1

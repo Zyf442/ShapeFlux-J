@@ -1,0 +1,14 @@
+Reference check: PASS
+Stats[requests=1, hits=0, misses=1, guardMisses=1, compilations=1, compileFailures=0, fallbacks=0, evictions=0, promotions=0, rejections=0, compileNanos=470397388, specialCompileNanos=0, probeNanos=0, validationNanos=8085636, cachedSpecializations=0, retainedBytecodeBytes=908, runtimeFailures=0, genericFallbacks=0, demotions=0, monitorChecks=0]
+x : Tensor<double>[N,D]
+bias : Tensor<double>[D] (row broadcast)
+
+v0 = X
+v1 = BIAS
+v2 = ADD[v0, v1]
+
+out = RMS_NORM(v2) : [N,D]
+
+Event[request=1, type=COMPILE, detail=generic / 470.40 ms]
+Event[request=1, type=DISPATCH, detail=3x7 -> generic [miss]]
+Saved /workspace/scratch/a3eb986cc3c3/shapeflux-j/results/release-checks/project-run

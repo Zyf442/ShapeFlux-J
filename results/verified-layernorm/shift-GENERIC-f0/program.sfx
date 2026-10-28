@@ -1,0 +1,3 @@
+# LayerNorm, epsilon=1e-5, no trainable affine parameters
+let features = silu(x + bias) + x * 0.1;
+out = layernorm(features);

@@ -1,0 +1,1 @@
+{"gc_ms":"35.0","scope_ms":"1529.65309","process_cpu_ms":"unsupported","scope":"cold,warmup,measurement,external_reference_and_worker_exports; excludes JVM startup; heap end is not peak or RSS","gc_count":"19.0","heap_used_at_end_bytes":"77422112","jit_ms":"1295.0","system_load_average":"2.05419921875"}

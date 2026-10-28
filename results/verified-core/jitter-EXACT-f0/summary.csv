@@ -1,0 +1,2 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+jitter,EXACT,20261027,0,48,2774.3488580000007,26.304363,5003.222248,397.541,682.391,20148.289,29034.164,14990.65611,1482.968737,0.0,673,0,672,664,0,0,0,0,true,0.0,8261,0,0,0

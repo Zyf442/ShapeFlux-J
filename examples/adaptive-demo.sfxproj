@@ -1,0 +1,17 @@
+#ShapeFlux-J project, UTF-8
+#Tue Oct 27 22:10:38 CST 2026
+cache=4
+format=shapeflux-project-2
+optimize_ir=true
+probe_rounds=7
+workload=hotset
+budget_ns=1000000000
+hot=3
+rows=48
+horizon=16384
+recheck=8
+strategy=ADAPTIVE
+dsl=\# Deliberate duplicate expressions, foldable constants, and dead code\nlet unused \= exp(x);\nlet factor \= (1.0 + 2.0) / 4.0;\nlet a \= relu(x + bias);\nlet b \= relu(x + bias);\nout \= (a + b) * factor;\n
+unroll=true
+trace_events=true
+cols=128

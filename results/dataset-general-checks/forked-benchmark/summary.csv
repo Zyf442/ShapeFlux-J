@@ -1,0 +1,5 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+hotset,GENERIC,42,0,18,735.511,6.226475,4.946167999999999,237.423,340.948,252.513,447.131,707.021128,10.036018,0.0,1,35,1,0,0,0,0,0,true,0.0,813,0,0,0
+hotset,BUCKET,42,0,18,1159.2266069999998,9.244977999999998,379.482586,367.854,1254.367,599.586,93967.302,1415.058376,84.219625,0.0,13,24,12,11,0,0,0,0,true,0.0,1751,0,0,0
+hotset,BUCKET,1042,1,18,1515.6613010000003,8.500729,476.360416,496.512,2570.488,650.845,106782.739,1818.455276,114.562417,0.0,13,24,12,11,0,0,0,0,true,0.0,1751,0,0,0
+hotset,GENERIC,1042,1,18,749.2575700000001,9.014253,11.725922,389.935,2025.718,436.173,2064.405,713.422731,12.873124,0.0,1,35,1,0,0,0,0,0,true,0.0,813,0,0,0

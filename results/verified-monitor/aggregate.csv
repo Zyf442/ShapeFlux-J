@@ -1,0 +1,4 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"custom / GENERIC",2,541.6930984999995,22.368053766164262,14.9925,60.662,1.0,true
+"custom / BUCKET",2,578.8083760000001,2.615971235484167,19.073999999999998,35.778999999999996,2.0,true
+"custom / ADAPTIVE",2,600.2260814999999,27.16322769210245,14.5515,35.844,2.0,true

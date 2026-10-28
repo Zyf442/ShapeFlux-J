@@ -1,0 +1,7 @@
+mode,fork,rows,inner,cols,compile_ms,cold_request_ms,median_compute_us,p95_compute_us,correct,max_abs_error,compilations
+REFERENCE,0,2,3,2,0.0,0.173892,1.703,2.064,true,0.0,0
+GENERIC,0,2,3,2,346.867401,365.99675,2.013,2.223,true,0.0,1
+BLOCKED,0,2,3,2,379.946259,396.81145,3.065,3.335,true,0.0,1
+BLOCKED,1,2,3,2,335.704906,352.297628,2.895,3.435,true,0.0,1
+REFERENCE,1,2,3,2,0.0,0.203476,1.862,2.033,true,0.0,0
+GENERIC,1,2,3,2,332.774076,349.403774,2.033,2.234,true,0.0,1

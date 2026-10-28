@@ -1,0 +1,15 @@
+ShapeFlux-J 2.4.0 中文项目
+
+1. 安装完整JDK17或更新版本；你的JDK23.0.2可用。
+2. 完整解压后双击 Chinese.bat 打开工作台。
+3. 先运行“激活函数融合链”，再试“可组合归约·行方差”。
+4. “轨迹分析”可选 examples/traces/recorded-combined.csv。
+5. “矩阵乘法”可生成示例或导入 examples/matmul-a.csv 和matmul-b.csv。
+6. 底部显示实际批次进度；“实验浏览”筛选并打开已有报告。
+7. 快速测试数据.bat读取KDD99前65536行；完整测试数据.bat读取全部4898431行。
+8. 验证新版功能.bat运行本地检查与新增功能的命令行集成检查。
+
+项目说明：README.md；离线阅读：README-preview.html。
+实测报告：results/index.html；操作指南：docs/user-guide.md。
+完整数据与字体已包含，运行不需要Python、数据库、前端服务或GPU。
+已有性能测量来自OpenJDK17.0.20

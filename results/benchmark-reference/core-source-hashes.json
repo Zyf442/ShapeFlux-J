@@ -1,0 +1,81 @@
+{
+  "reference_jar_sha256": "b818dbc0373b9a9c699972ca7499e9e58a1fff135f91c938fdf2920af7c625f5",
+  "files": [
+    {
+      "file": "src/main/java/io/shapeflux/runtime/Engine.java",
+      "sha256": "5b936dbde2103fee1b2adfe3486f958aa353765857918fcb1a52fe8ce8494eff"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/EngineConfig.java",
+      "sha256": "accf954fe783c4129f0d9a01cf8c2972eb7e3e615bded029403ff3ab86d6b4f9"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/Interpreter.java",
+      "sha256": "020b349597f573a0e40b9be52cf19a07e2b6919919bc225b29cf2376be4722ec"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/KernelProbe.java",
+      "sha256": "11cfb9dbfa4dcaf5b4725e6959beaaaaabdd4e26ff20c9f71af54f15404a3cdb"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/Numerics.java",
+      "sha256": "984ae00f07c9f3be72921131b8affbe6beeff7c90607fcf9fa9d8003ad7325f8"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/Strategy.java",
+      "sha256": "c222021c789343647be15bb804d0de85bbfc901a4768aaf1c1163a3108afb8bf"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/runtime/TensorInput.java",
+      "sha256": "05202409a47665fa537c9882eb2d7a92355867ad1bccd266ff25067afe934eff"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/CodeGenerator.java",
+      "sha256": "96e48bbe22243272e294f1ada776dc46ec38a057e0940bd606d076c97bede131"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/CompiledKernel.java",
+      "sha256": "368b622e4e53aa5601810bfe4bd742c6bec593931ec33d1587f7d7bc764d8319"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/Kernel.java",
+      "sha256": "7dda12ef98be1ca1095cee191e6f4197d5ed5e07c37c151e3f2552bfa219b37d"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/KernelCompiler.java",
+      "sha256": "327edc654ebde21d10457fc322a9c1d550699b9a5d41fc5dc2f44a2d7d2a2f1a"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/MemoryCompiler.java",
+      "sha256": "7fddf58e38308e2523902fbe4ff5d6a0fa7ee80fe159d77f79a7f43feba928c1"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/compiler/ShapeGuard.java",
+      "sha256": "6916b4ea4547070bd47ef4776c1a902d302c44f87cd0c8b805671be0f93b7603"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Node.java",
+      "sha256": "974072cfb5dde66c9f0f51a2065cf6ebfd9660ebabcbf46f02f4708113ebbabb"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Op.java",
+      "sha256": "786c0dd99f4cebc79228658f6fb045bacc963a003742c6ca3c19ab92549c57b6"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Ops.java",
+      "sha256": "bbc85b862b23965b9f73a7e94a331e7eae3a1930f86a379f738197581711470f"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Optimizer.java",
+      "sha256": "c51c681e1e559a36cb52d702c85d78c7a8a4a2c7795078fe312e9d57bf622c8d"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Parser.java",
+      "sha256": "bdc76bd00391d6bae677f211b24b4a34d572d14ffea49e23b5cfba8154aab75b"
+    },
+    {
+      "file": "src/main/java/io/shapeflux/ir/Program.java",
+      "sha256": "ba8c9a35cc61ba50e06a45cbec0dc1579875aaf4334c098ca63bcc7c561b77d2"
+    }
+  ]
+}

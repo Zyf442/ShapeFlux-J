@@ -1,0 +1,2 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"hotset / BUCKET_NO_UNROLL",1,633.5132550000001,,49.825,146.431,3.0,true

@@ -1,0 +1,221 @@
+example,strategy,rows,cols,correct,max_abs_error
+Activation chain,INTERPRETED,1,1,true,0.0
+Activation chain,INTERPRETED,3,7,true,0.0
+Activation chain,INTERPRETED,33,19,true,0.0
+Activation chain,INTERPRETED,40,19,true,0.0
+Activation chain,GENERIC,1,1,true,0.0
+Activation chain,GENERIC,3,7,true,0.0
+Activation chain,GENERIC,33,19,true,0.0
+Activation chain,GENERIC,40,19,true,0.0
+Activation chain,EXACT,1,1,true,0.0
+Activation chain,EXACT,3,7,true,0.0
+Activation chain,EXACT,33,19,true,0.0
+Activation chain,EXACT,40,19,true,0.0
+Activation chain,BUCKET,1,1,true,0.0
+Activation chain,BUCKET,3,7,true,0.0
+Activation chain,BUCKET,33,19,true,0.0
+Activation chain,BUCKET,40,19,true,0.0
+Activation chain,ADAPTIVE,1,1,true,0.0
+Activation chain,ADAPTIVE,3,7,true,0.0
+Activation chain,ADAPTIVE,33,19,true,0.0
+Activation chain,ADAPTIVE,40,19,true,0.0
+Stable row softmax,INTERPRETED,1,1,true,0.0
+Stable row softmax,INTERPRETED,3,7,true,0.0
+Stable row softmax,INTERPRETED,33,19,true,0.0
+Stable row softmax,INTERPRETED,40,19,true,0.0
+Stable row softmax,GENERIC,1,1,true,0.0
+Stable row softmax,GENERIC,3,7,true,0.0
+Stable row softmax,GENERIC,33,19,true,0.0
+Stable row softmax,GENERIC,40,19,true,0.0
+Stable row softmax,EXACT,1,1,true,0.0
+Stable row softmax,EXACT,3,7,true,0.0
+Stable row softmax,EXACT,33,19,true,0.0
+Stable row softmax,EXACT,40,19,true,0.0
+Stable row softmax,BUCKET,1,1,true,0.0
+Stable row softmax,BUCKET,3,7,true,0.0
+Stable row softmax,BUCKET,33,19,true,0.0
+Stable row softmax,BUCKET,40,19,true,0.0
+Stable row softmax,ADAPTIVE,1,1,true,0.0
+Stable row softmax,ADAPTIVE,3,7,true,0.0
+Stable row softmax,ADAPTIVE,33,19,true,0.0
+Stable row softmax,ADAPTIVE,40,19,true,0.0
+Row reduction,INTERPRETED,1,1,true,0.0
+Row reduction,INTERPRETED,3,7,true,0.0
+Row reduction,INTERPRETED,33,19,true,0.0
+Row reduction,INTERPRETED,40,19,true,0.0
+Row reduction,GENERIC,1,1,true,0.0
+Row reduction,GENERIC,3,7,true,0.0
+Row reduction,GENERIC,33,19,true,0.0
+Row reduction,GENERIC,40,19,true,0.0
+Row reduction,EXACT,1,1,true,0.0
+Row reduction,EXACT,3,7,true,0.0
+Row reduction,EXACT,33,19,true,0.0
+Row reduction,EXACT,40,19,true,0.0
+Row reduction,BUCKET,1,1,true,0.0
+Row reduction,BUCKET,3,7,true,0.0
+Row reduction,BUCKET,33,19,true,0.0
+Row reduction,BUCKET,40,19,true,0.0
+Row reduction,ADAPTIVE,1,1,true,0.0
+Row reduction,ADAPTIVE,3,7,true,0.0
+Row reduction,ADAPTIVE,33,19,true,0.0
+Row reduction,ADAPTIVE,40,19,true,0.0
+CSE + constant folding,INTERPRETED,1,1,true,0.0
+CSE + constant folding,INTERPRETED,3,7,true,0.0
+CSE + constant folding,INTERPRETED,33,19,true,0.0
+CSE + constant folding,INTERPRETED,40,19,true,0.0
+CSE + constant folding,GENERIC,1,1,true,0.0
+CSE + constant folding,GENERIC,3,7,true,0.0
+CSE + constant folding,GENERIC,33,19,true,0.0
+CSE + constant folding,GENERIC,40,19,true,0.0
+CSE + constant folding,EXACT,1,1,true,0.0
+CSE + constant folding,EXACT,3,7,true,0.0
+CSE + constant folding,EXACT,33,19,true,0.0
+CSE + constant folding,EXACT,40,19,true,0.0
+CSE + constant folding,BUCKET,1,1,true,0.0
+CSE + constant folding,BUCKET,3,7,true,0.0
+CSE + constant folding,BUCKET,33,19,true,0.0
+CSE + constant folding,BUCKET,40,19,true,0.0
+CSE + constant folding,ADAPTIVE,1,1,true,0.0
+CSE + constant folding,ADAPTIVE,3,7,true,0.0
+CSE + constant folding,ADAPTIVE,33,19,true,0.0
+CSE + constant folding,ADAPTIVE,40,19,true,0.0
+Layer normalization,INTERPRETED,1,1,true,0.0
+Layer normalization,INTERPRETED,3,7,true,0.0
+Layer normalization,INTERPRETED,33,19,true,0.0
+Layer normalization,INTERPRETED,40,19,true,0.0
+Layer normalization,GENERIC,1,1,true,0.0
+Layer normalization,GENERIC,3,7,true,0.0
+Layer normalization,GENERIC,33,19,true,0.0
+Layer normalization,GENERIC,40,19,true,0.0
+Layer normalization,EXACT,1,1,true,0.0
+Layer normalization,EXACT,3,7,true,0.0
+Layer normalization,EXACT,33,19,true,0.0
+Layer normalization,EXACT,40,19,true,0.0
+Layer normalization,BUCKET,1,1,true,0.0
+Layer normalization,BUCKET,3,7,true,0.0
+Layer normalization,BUCKET,33,19,true,0.0
+Layer normalization,BUCKET,40,19,true,0.0
+Layer normalization,ADAPTIVE,1,1,true,0.0
+Layer normalization,ADAPTIVE,3,7,true,0.0
+Layer normalization,ADAPTIVE,33,19,true,0.0
+Layer normalization,ADAPTIVE,40,19,true,0.0
+RMS normalization,INTERPRETED,1,1,true,0.0
+RMS normalization,INTERPRETED,3,7,true,0.0
+RMS normalization,INTERPRETED,33,19,true,0.0
+RMS normalization,INTERPRETED,40,19,true,0.0
+RMS normalization,GENERIC,1,1,true,0.0
+RMS normalization,GENERIC,3,7,true,0.0
+RMS normalization,GENERIC,33,19,true,0.0
+RMS normalization,GENERIC,40,19,true,0.0
+RMS normalization,EXACT,1,1,true,0.0
+RMS normalization,EXACT,3,7,true,0.0
+RMS normalization,EXACT,33,19,true,0.0
+RMS normalization,EXACT,40,19,true,0.0
+RMS normalization,BUCKET,1,1,true,0.0
+RMS normalization,BUCKET,3,7,true,0.0
+RMS normalization,BUCKET,33,19,true,0.0
+RMS normalization,BUCKET,40,19,true,0.0
+RMS normalization,ADAPTIVE,1,1,true,0.0
+RMS normalization,ADAPTIVE,3,7,true,0.0
+RMS normalization,ADAPTIVE,33,19,true,0.0
+RMS normalization,ADAPTIVE,40,19,true,0.0
+Mean magnitude,INTERPRETED,1,1,true,0.0
+Mean magnitude,INTERPRETED,3,7,true,0.0
+Mean magnitude,INTERPRETED,33,19,true,0.0
+Mean magnitude,INTERPRETED,40,19,true,0.0
+Mean magnitude,GENERIC,1,1,true,0.0
+Mean magnitude,GENERIC,3,7,true,0.0
+Mean magnitude,GENERIC,33,19,true,0.0
+Mean magnitude,GENERIC,40,19,true,0.0
+Mean magnitude,EXACT,1,1,true,0.0
+Mean magnitude,EXACT,3,7,true,0.0
+Mean magnitude,EXACT,33,19,true,0.0
+Mean magnitude,EXACT,40,19,true,0.0
+Mean magnitude,BUCKET,1,1,true,0.0
+Mean magnitude,BUCKET,3,7,true,0.0
+Mean magnitude,BUCKET,33,19,true,0.0
+Mean magnitude,BUCKET,40,19,true,0.0
+Mean magnitude,ADAPTIVE,1,1,true,0.0
+Mean magnitude,ADAPTIVE,3,7,true,0.0
+Mean magnitude,ADAPTIVE,33,19,true,0.0
+Mean magnitude,ADAPTIVE,40,19,true,0.0
+Gated residual,INTERPRETED,1,1,true,0.0
+Gated residual,INTERPRETED,3,7,true,0.0
+Gated residual,INTERPRETED,33,19,true,0.0
+Gated residual,INTERPRETED,40,19,true,0.0
+Gated residual,GENERIC,1,1,true,0.0
+Gated residual,GENERIC,3,7,true,0.0
+Gated residual,GENERIC,33,19,true,0.0
+Gated residual,GENERIC,40,19,true,0.0
+Gated residual,EXACT,1,1,true,0.0
+Gated residual,EXACT,3,7,true,0.0
+Gated residual,EXACT,33,19,true,0.0
+Gated residual,EXACT,40,19,true,0.0
+Gated residual,BUCKET,1,1,true,0.0
+Gated residual,BUCKET,3,7,true,0.0
+Gated residual,BUCKET,33,19,true,0.0
+Gated residual,BUCKET,40,19,true,0.0
+Gated residual,ADAPTIVE,1,1,true,0.0
+Gated residual,ADAPTIVE,3,7,true,0.0
+Gated residual,ADAPTIVE,33,19,true,0.0
+Gated residual,ADAPTIVE,40,19,true,0.0
+Composable variance,INTERPRETED,1,1,true,0.0
+Composable variance,INTERPRETED,3,7,true,0.0
+Composable variance,INTERPRETED,33,19,true,0.0
+Composable variance,INTERPRETED,40,19,true,0.0
+Composable variance,GENERIC,1,1,true,0.0
+Composable variance,GENERIC,3,7,true,0.0
+Composable variance,GENERIC,33,19,true,0.0
+Composable variance,GENERIC,40,19,true,0.0
+Composable variance,EXACT,1,1,true,0.0
+Composable variance,EXACT,3,7,true,0.0
+Composable variance,EXACT,33,19,true,0.0
+Composable variance,EXACT,40,19,true,0.0
+Composable variance,BUCKET,1,1,true,0.0
+Composable variance,BUCKET,3,7,true,0.0
+Composable variance,BUCKET,33,19,true,0.0
+Composable variance,BUCKET,40,19,true,0.0
+Composable variance,ADAPTIVE,1,1,true,0.0
+Composable variance,ADAPTIVE,3,7,true,0.0
+Composable variance,ADAPTIVE,33,19,true,0.0
+Composable variance,ADAPTIVE,40,19,true,0.0
+Composed stable softmax,INTERPRETED,1,1,true,0.0
+Composed stable softmax,INTERPRETED,3,7,true,0.0
+Composed stable softmax,INTERPRETED,33,19,true,0.0
+Composed stable softmax,INTERPRETED,40,19,true,0.0
+Composed stable softmax,GENERIC,1,1,true,0.0
+Composed stable softmax,GENERIC,3,7,true,0.0
+Composed stable softmax,GENERIC,33,19,true,0.0
+Composed stable softmax,GENERIC,40,19,true,0.0
+Composed stable softmax,EXACT,1,1,true,0.0
+Composed stable softmax,EXACT,3,7,true,0.0
+Composed stable softmax,EXACT,33,19,true,0.0
+Composed stable softmax,EXACT,40,19,true,0.0
+Composed stable softmax,BUCKET,1,1,true,0.0
+Composed stable softmax,BUCKET,3,7,true,0.0
+Composed stable softmax,BUCKET,33,19,true,0.0
+Composed stable softmax,BUCKET,40,19,true,0.0
+Composed stable softmax,ADAPTIVE,1,1,true,0.0
+Composed stable softmax,ADAPTIVE,3,7,true,0.0
+Composed stable softmax,ADAPTIVE,33,19,true,0.0
+Composed stable softmax,ADAPTIVE,40,19,true,0.0
+Trigonometric features,INTERPRETED,1,1,true,0.0
+Trigonometric features,INTERPRETED,3,7,true,0.0
+Trigonometric features,INTERPRETED,33,19,true,0.0
+Trigonometric features,INTERPRETED,40,19,true,0.0
+Trigonometric features,GENERIC,1,1,true,0.0
+Trigonometric features,GENERIC,3,7,true,0.0
+Trigonometric features,GENERIC,33,19,true,0.0
+Trigonometric features,GENERIC,40,19,true,0.0
+Trigonometric features,EXACT,1,1,true,0.0
+Trigonometric features,EXACT,3,7,true,0.0
+Trigonometric features,EXACT,33,19,true,0.0
+Trigonometric features,EXACT,40,19,true,0.0
+Trigonometric features,BUCKET,1,1,true,0.0
+Trigonometric features,BUCKET,3,7,true,0.0
+Trigonometric features,BUCKET,33,19,true,0.0
+Trigonometric features,BUCKET,40,19,true,0.0
+Trigonometric features,ADAPTIVE,1,1,true,0.0
+Trigonometric features,ADAPTIVE,3,7,true,0.0
+Trigonometric features,ADAPTIVE,33,19,true,0.0
+Trigonometric features,ADAPTIVE,40,19,true,0.0

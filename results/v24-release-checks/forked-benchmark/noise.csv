@@ -1,0 +1,5 @@
+worker,gc_count,gc_ms,jit_ms,process_cpu_ms,scope_ms,heap_used_at_end_bytes
+"hotset-BUCKET-f0",4.0,17.0,2470.0,unsupported,987.639713,41570264
+"hotset-BUCKET-f1",4.0,22.0,2029.0,unsupported,960.839891,41473192
+"hotset-GENERIC-f0",1.0,7.0,605.0,unsupported,446.119762,38704640
+"hotset-GENERIC-f1",1.0,6.0,601.0,unsupported,447.738488,38606336

@@ -1,0 +1,2 @@
+workload_variant,forks,cold_mean_ms,cold_sample_sd_ms,wall_median_mean_us,wall_p95_mean_us,compilations_mean,healthy
+"longtail / BUCKET",1,1235.0560310000003,,201.604,24843.471,157.0,true

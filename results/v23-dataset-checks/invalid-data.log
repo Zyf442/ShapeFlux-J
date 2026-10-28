@@ -1,0 +1,2 @@
+正在测试真实数据：通用融合编译（第 1 次独立进程）
+错误：数据集工作进程执行失败，请查看 /workspace/scratch/a3eb986cc3c3/shapeflux-j/results/v23-dataset-checks/failed/GENERIC-f0/worker.log

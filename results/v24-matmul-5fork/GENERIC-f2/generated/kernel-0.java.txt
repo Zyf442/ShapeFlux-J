@@ -1,0 +1,7 @@
+package io.shapeflux.generated;
+public final class M_1 implements io.shapeflux.compiler.MatmulKernel {
+public void run(double[] a,double[] b,int n,int k,int m,double[] out){
+if(!(n>=1 && n<=2147483647 && k>=1 && k<=2147483647 && m>=1 && m<=2147483647) || (long)n*k>8000000L || (long)k*m>8000000L || (long)n*m>8000000L || (long)n*k*m>500000000L || a.length!=(long)n*k || b.length!=(long)k*m || out.length!=(long)n*m || out==a || out==b)throw new IllegalArgumentException("Matmul shape guard failed");
+final int N=n,K=k,M=m;
+for(int i=0;i<N;i++){io.shapeflux.runtime.KernelProbe.interrupted();for(int j=0;j<M;j++){double sum=0.0;for(int q=0;q<K;q++)sum+=a[i*K+q]*b[q*M+j];out[i*M+j]=sum;}}
+}}

@@ -1,0 +1,42 @@
+package io.shapeflux.generated;
+
+// Guard: 17..32x56; unroll=4
+public final class K_6 implements io.shapeflux.compiler.Kernel {
+  public void run(double[] x, double[] bias, int rows, int cols, double[] out) {
+    if (!(rows >= 17 && rows <= 32 && cols == 56) || rows < 1 || cols < 1 || (long) rows * cols > 8000000L || x.length != (long) rows * cols || bias.length != cols || out.length != (long) rows * cols) throw new IllegalArgumentException("Kernel shape guard failed");
+    final int width = 56;
+    final int height = rows;
+    for (int r = 0; r < height; r++) {
+      int offset = r * width;
+      int c = 0;
+      for (; c + 3 < width; c += 4) {
+        out[offset + c + 0] = eval(x, bias, offset + c + 0, c + 0);
+        out[offset + c + 1] = eval(x, bias, offset + c + 1, c + 1);
+        out[offset + c + 2] = eval(x, bias, offset + c + 2, c + 2);
+        out[offset + c + 3] = eval(x, bias, offset + c + 3, c + 3);
+      }
+      for (; c < width; c++) {
+        out[offset + c] = eval(x, bias, offset + c, c);
+      }
+  double mean = 0.0, m2 = 0.0;
+  for (int j = 0; j < width; j++) {
+    double v = out[offset + j], delta = v - mean;
+    mean += delta / (j + 1);
+    m2 += delta * (v - mean);
+  }
+  double denom = Math.sqrt(m2 / width + 1e-5);
+  for (int j = 0; j < width; j++) out[offset + j] = (out[offset + j] - mean) / denom;
+    }
+  }
+
+  private static double eval(double[] x, double[] bias, int i, int c) {
+    double v0 = x[i];
+    double v1 = bias[c];
+    double v2 = v0 + v1;
+    double v3 = v2 * io.shapeflux.ir.Ops.sigmoid(v2);
+    double v4 = 0.1;
+    double v5 = v0 * v4;
+    double v6 = v3 + v5;
+    return v6;
+  }
+}

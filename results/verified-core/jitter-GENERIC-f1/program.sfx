@@ -1,0 +1,4 @@
+# Fused activation chain / x:[N,D], bias:[D]
+let a = relu(x * 1.25 + bias);
+let h = tanh(a * 0.5) + a * 0.1;
+out = sigmoid(h);

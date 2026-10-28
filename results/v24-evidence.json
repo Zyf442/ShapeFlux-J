@@ -1,0 +1,68 @@
+{
+  "version": "2.4.0",
+  "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+  "platform": "Linux",
+  "measured_jdk": "17.0.20",
+  "user_jdk": "23.0.2 (user reported; separate from measured JDK)",
+  "unit_checks": 679,
+  "runs": {
+    "v24-matmul-5fork": {
+      "workers": 15,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "confidence_records": 9,
+      "noise_records": 15
+    },
+    "v24-composed-5fork": {
+      "workers": 25,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "confidence_records": 15,
+      "noise_records": 25
+    },
+    "v24-kdd99-quick-5fork": {
+      "workers": 25,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "row_visits": 1638400,
+      "batch_visits": 300,
+      "confidence_records": 20,
+      "noise_records": 25
+    },
+    "v24-recorded-5fork": {
+      "workers": 15,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "confidence_records": 9,
+      "noise_records": 15
+    },
+    "v24-covertype-full": {
+      "workers": 5,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "row_visits": 2905060,
+      "batch_visits": 525
+    },
+    "v24-poker-full": {
+      "workers": 5,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "row_visits": 5125050,
+      "batch_visits": 920
+    },
+    "v24-kdd99-full": {
+      "workers": 5,
+      "max_abs_error": 0,
+      "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+      "row_visits": 24492155,
+      "batch_visits": 4370
+    }
+  },
+  "v24-release-checks": 19,
+  "v24-dataset-checks": 13,
+  "v24-completion-checks": 23,
+  "full_dataset_row_visits": 32522265,
+  "full_dataset_batch_visits": 5815,
+  "full_dataset_workers": 15,
+  "repeated_workers": 80
+}

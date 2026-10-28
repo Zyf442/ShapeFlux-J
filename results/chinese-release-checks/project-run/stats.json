@@ -1,0 +1,1 @@
+{"requests":1,"hits":0,"misses":1,"guardMisses":1,"compilations":1,"compileFailures":0,"fallbacks":0,"evictions":0,"promotions":0,"rejections":0,"compileNanos":1069718970,"specialCompileNanos":0,"probeNanos":0,"validationNanos":16678592,"cachedSpecializations":0,"retainedBytecodeBytes":908,"runtimeFailures":0,"genericFallbacks":0,"demotions":0,"monitorChecks":0}

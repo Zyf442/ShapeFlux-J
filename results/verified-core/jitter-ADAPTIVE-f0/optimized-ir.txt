@@ -1,0 +1,18 @@
+x : Tensor<double>[N,D]
+bias : Tensor<double>[D] (row broadcast)
+
+v0 = X
+v1 = CONSTANT(1.25)
+v2 = MUL[v0, v1]
+v3 = BIAS
+v4 = ADD[v2, v3]
+v5 = RELU[v4]
+v6 = CONSTANT(0.5)
+v7 = MUL[v5, v6]
+v8 = TANH[v7]
+v9 = CONSTANT(0.1)
+v10 = MUL[v5, v9]
+v11 = ADD[v8, v10]
+v12 = SIGMOID[v11]
+
+out = MAP(v12) : [N,D]

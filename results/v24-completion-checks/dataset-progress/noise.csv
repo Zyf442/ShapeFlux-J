@@ -1,0 +1,3 @@
+worker,gc_count,gc_ms,jit_ms,process_cpu_ms,scope_ms,heap_used_at_end_bytes
+"GENERIC-f0",2.0,9.0,994.0,unsupported,560.068069,85974712
+"GENERIC-f1",2.0,9.0,1002.0,unsupported,570.180126,86066936

@@ -1,0 +1,22 @@
+package io.shapeflux.generated;
+public final class K_1 implements io.shapeflux.compiler.Kernel {
+public void run(double[] x,double[] bias,int rows,int cols,double[] out) {
+if(!(rows >= 1 && rows <= 2147483647 && cols >= 1 && cols <= 2147483647) || (long)rows*cols>8000000L || x.length!=(long)rows*cols || bias.length!=cols || out.length!=rows)throw new IllegalArgumentException("Kernel shape guard failed");
+if((long)cols*3>32000000L)throw new IllegalArgumentException("Row scratch budget exceeded");
+double[][] t=new double[1][cols];double[] tail=new double[cols],finished=new double[1];
+for(int r=0;r<rows;r++){int offset=r*cols;
+for(int c=0;c<cols;c++)t[0][c]=e0(x,bias,offset+c,c,t);
+io.shapeflux.ir.Ops.transformRow(t[0],io.shapeflux.ir.Op.ROWMEAN);
+for(int c=0;c<cols;c++)tail[c]=e1(x,bias,offset+c,c,t);
+io.shapeflux.ir.Ops.finish(tail,finished,1,cols,io.shapeflux.ir.Program.Terminal.ROW_MEAN);
+System.arraycopy(finished,0,out,r*finished.length,finished.length);}}
+private static double e0(double[] x,double[] bias,int i,int c,double[][] t){
+double v0=x[i];
+return v0;}
+private static double e1(double[] x,double[] bias,int i,int c,double[][] t){
+double v0=x[i];
+double v1=t[0][c];
+double v2=v0 - v1;
+double v3=v2 * v2;
+return v3;}
+}

@@ -1,0 +1,2 @@
+workload,variant,seed,fork,trace_requests,cold_total_ms,cold_compute_ms,steady_total_ms,steady_compute_median_us,steady_compute_p95_us,steady_wall_median_us,steady_wall_p95_us,compile_ms,validation_ms,probe_ms,compilations,hits,misses,evictions,promotions,rejections,compile_failures,fallbacks,correct,max_abs_error,retained_bytecode_bytes,runtime_failures,demotions,monitor_checks
+custom,BUCKET,20264027,3,184,548.5495750000002,67.451005,142.48382900000004,335.625,496.317,358.499,539.031,429.349812,30.194164,0.0,3,734,2,0,0,0,0,0,true,0.0,3011,0,0,0

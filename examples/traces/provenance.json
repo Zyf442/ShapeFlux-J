@@ -1,0 +1,36 @@
+{
+  "type": "recorded dataset-reader batch shapes; not a production-service arrival trace",
+  "recorded_at": "v2.3 full dataset experiments",
+  "combined_order": [
+    "covertype",
+    "poker",
+    "kdd99"
+  ],
+  "combined_note": "Concatenation of three separate runs for shape-analysis convenience, not a single observed service session.",
+  "sources": [
+    {
+      "trace": "recorded-covertype.csv",
+      "source": "results/v23-covertype-full/INTERPRETED-f0/batches.csv",
+      "source_sha256": "0eab2e5c6412c7d661492010a7bb3cb51049464b342a938811ce33c0309042ce",
+      "trace_sha256": "6f71d83d3e8fbef6b25e558de92e590d71712b1fad612ef81032845d930b3c74",
+      "requests": 105,
+      "real_rows": 581012
+    },
+    {
+      "trace": "recorded-poker.csv",
+      "source": "results/v23-poker-full/INTERPRETED-f0/batches.csv",
+      "source_sha256": "409b7f58c3c1633b51f0d2d5701e8ff95457fc50f500ed022bff44277ed22d5a",
+      "trace_sha256": "6e32be7c2dcab75e927445e26151c794036a617072c8e07df58e30855afc843d",
+      "requests": 184,
+      "real_rows": 1025010
+    },
+    {
+      "trace": "recorded-kdd99.csv",
+      "source": "results/v23-kdd99-full/INTERPRETED-f0/batches.csv",
+      "source_sha256": "4b0fef77e8f0224b8dac3560b01e7715814509080eed9d90aa828d88bd20e7b0",
+      "trace_sha256": "2e35c61b5f786c554b6d9933082494501dcc84069a256a05d2fbbb759af6d9c4",
+      "requests": 874,
+      "real_rows": 4898431
+    }
+  ]
+}

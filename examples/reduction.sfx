@@ -1,0 +1,3 @@
+# One scalar score per row: output is [N,1]
+let a = relu(x * 0.8 + bias);
+out = rowsum(a * a);

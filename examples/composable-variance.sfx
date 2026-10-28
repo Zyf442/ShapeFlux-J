@@ -1,0 +1,2 @@
+let centered = x - rowmean(x);
+out = rowmean(square(centered));

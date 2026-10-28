@@ -1,0 +1,11 @@
+x : Tensor<double>[N,D]
+bias : Tensor<double>[D] (row broadcast)
+
+v0 = X
+v1 = BIAS
+v2 = ADD[v0, v1]
+v3 = RELU[v2]
+v4 = CONSTANT(2.0)
+v5 = MUL[v3, v4]
+
+out = MAP(v5) : [N,D]

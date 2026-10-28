@@ -1,0 +1,17 @@
+#ShapeFlux-J project, UTF-8
+#Tue Oct 27 22:10:38 CST 2026
+cache=4
+format=shapeflux-project-2
+optimize_ir=true
+probe_rounds=7
+workload=hotset
+budget_ns=500000000
+hot=4
+rows=40
+horizon=256
+recheck=32
+strategy=BUCKET
+dsl=\# LayerNorm, epsilon\=1e-5, no trainable affine parameters\nlet features \= silu(x + bias) + x * 0.1;\nout \= layernorm(features);\n
+unroll=true
+trace_events=true
+cols=128

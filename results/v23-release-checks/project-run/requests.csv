@@ -1,0 +1,2 @@
+index,rows,cols,selected,cache_hit,compute_us,total_us,correct,max_abs_error
+0,3,7,generic,false,281.577000,1076440.284000,true,0.00000000000

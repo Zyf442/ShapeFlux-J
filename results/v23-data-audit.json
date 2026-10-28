@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "elapsed_seconds": 51.06122541427612,
+  "audits": [
+    {
+      "dataset": "kdd99",
+      "passed": true,
+      "rows_checked": 4898431,
+      "features": 122,
+      "checks": "numeric values, complete row order, category positions and one-hot cardinality"
+    },
+    {
+      "dataset": "poker",
+      "passed": true,
+      "rows_checked": 1025010,
+      "features": 10,
+      "checks": "all original values, label removal, concatenation order and EOF"
+    },
+    {
+      "dataset": "covertype",
+      "passed": true,
+      "rows_checked": 581012,
+      "features": 54,
+      "checks": "all original numeric features, label removal, 71-batch order and EOF"
+    }
+  ],
+  "total_records_checked": 6504453
+}

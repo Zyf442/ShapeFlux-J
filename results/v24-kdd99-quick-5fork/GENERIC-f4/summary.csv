@@ -1,0 +1,2 @@
+strategy,fork,rows,features,batches,engine_ms,compute_ms,read_ms,reference_ms,elapsed_ms,request_p50_us,request_p95_us,compilations,hits,misses,compile_failures,runtime_failures,fallbacks,compile_ms,correct,max_abs_error,input_values_sha256
+GENERIC,4,65536,122,12,446.51383,28.678524,334.273959,96.306271,968.54691,2683.787,416279.837,1,11,1,0,0,0,368.626548,true,0.0,94d88aa41985504e1e56707d13b2a8ae79f6447e61351fabfb6c57bafde7ba16

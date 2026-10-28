@@ -1,0 +1,20 @@
+#ShapeFlux-J project, UTF-8
+#Wed Oct 28 18:38:26 CST 2026
+cache=3
+format=shapeflux-project-2
+optimize_ir=true
+probe_rounds=7
+workload=hotset
+budget_ns=0
+hot=2
+rows=48
+reuse_window=128
+horizon=256
+col_bucket=0
+recheck=8
+row_bucket=0
+strategy=ADAPTIVE
+dsl=\# RMS normalization with scaled sum of squares\nout \= rmsnorm(x + bias);\n
+unroll=true
+trace_events=true
+cols=128

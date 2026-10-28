@@ -1,0 +1,175 @@
+{
+  "application_sha256": "511acf76305b1b278feab502d541116b77f3aebb8b7b23fa2956ef371d3d17a6",
+  "measured_jdk": "17.0.20",
+  "platform": "Linux",
+  "runs": [
+    {
+      "name": "general-checks",
+      "exit_code": 0,
+      "wall_seconds": 11.067,
+      "command": [
+        "java",
+        "-cp",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "tools/ValidateRelease.java",
+        "results/v24-release-checks"
+      ]
+    },
+    {
+      "name": "dataset-checks",
+      "exit_code": 0,
+      "wall_seconds": 3.578,
+      "command": [
+        "java",
+        "-cp",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "tools/ValidateDatasetRelease.java",
+        "results/v24-dataset-checks"
+      ]
+    },
+    {
+      "name": "matrix-five-forks",
+      "exit_code": 0,
+      "wall_seconds": 7.297,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "matmul",
+        "--rows",
+        "96",
+        "--inner",
+        "128",
+        "--cols",
+        "80",
+        "--forks",
+        "5",
+        "--warmup",
+        "4",
+        "--measure",
+        "9",
+        "--output",
+        "results/v24-matmul-5fork"
+      ]
+    },
+    {
+      "name": "composed-two-axis-five-forks",
+      "exit_code": 0,
+      "wall_seconds": 15.751,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "bench",
+        "--quick",
+        "--trace",
+        "examples/traces/multiaxis.csv",
+        "--file",
+        "examples/composable-softmax.sfx",
+        "--forks",
+        "5",
+        "--warmup",
+        "3",
+        "--measure",
+        "5",
+        "--row-bucket",
+        "32",
+        "--col-bucket",
+        "32",
+        "--output",
+        "results/v24-composed-5fork"
+      ]
+    },
+    {
+      "name": "kdd-quick-five-forks",
+      "exit_code": 0,
+      "wall_seconds": 30.422,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "dataset",
+        "--dataset",
+        "kdd99",
+        "--max-rows",
+        "65536",
+        "--forks",
+        "5",
+        "--output",
+        "results/v24-kdd99-quick-5fork"
+      ]
+    },
+    {
+      "name": "recorded-trace-five-forks",
+      "exit_code": 0,
+      "wall_seconds": 22.808,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "bench",
+        "--quick",
+        "--trace",
+        "examples/traces/recorded-poker.csv",
+        "--file",
+        "examples/rmsnorm.sfx",
+        "--modes",
+        "GENERIC,BUCKET,ADAPTIVE",
+        "--forks",
+        "5",
+        "--warmup",
+        "1",
+        "--measure",
+        "2",
+        "--output",
+        "results/v24-recorded-5fork"
+      ]
+    },
+    {
+      "name": "covertype-full",
+      "exit_code": 0,
+      "wall_seconds": 15.516,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "dataset",
+        "--dataset",
+        "covertype",
+        "--output",
+        "results/v24-covertype-full"
+      ]
+    },
+    {
+      "name": "poker-full",
+      "exit_code": 0,
+      "wall_seconds": 11.111,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "dataset",
+        "--dataset",
+        "poker",
+        "--output",
+        "results/v24-poker-full"
+      ]
+    },
+    {
+      "name": "kdd99-full",
+      "exit_code": 0,
+      "wall_seconds": 169.95,
+      "command": [
+        "java",
+        "-jar",
+        "/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/dist/shapeflux-j.jar",
+        "dataset",
+        "--dataset",
+        "kdd99",
+        "--output",
+        "results/v24-kdd99-full"
+      ]
+    }
+  ],
+  "state": "COMPLETE"
+}

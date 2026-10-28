@@ -1,0 +1,2 @@
+正在测试真实数据：精确形状特化（第 1 次独立进程）
+错误：Worker timeout; 工作进程超时：/workspace/scratch/a3eb986cc3c3/revision/shapeflux-j/results/v24-dataset-checks/expected-timeout/EXACT-f0/worker.log

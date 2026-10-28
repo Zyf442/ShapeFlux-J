@@ -1,0 +1,2 @@
+1 COMPILE generic / 1572.22 ms
+1 DISPATCH 2x3 -> generic [miss]

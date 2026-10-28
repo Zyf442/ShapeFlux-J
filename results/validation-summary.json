@@ -1,0 +1,10 @@
+{
+  "unit_checks": 419,
+  "release_integration_checks": 19,
+  "packaged_request_checks": 160,
+  "benchmark_groups": 98,
+  "benchmark_request_checks": 35160,
+  "max_abs_error": 0,
+  "application_sha256": "b818dbc0373b9a9c699972ca7499e9e58a1fff135f91c938fdf2920af7c625f5",
+  "all_benchmark_groups_healthy": true
+}
